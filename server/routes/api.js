@@ -8,6 +8,7 @@ const uploadApi = require("./api-routes/upload")
 const cartApi = require("./api-routes/cart")
 const productApi = require("./api-routes/products");
 const categoryApi = require("./api-routes/categories");
+const orderApi = require("./api-routes/order");
 
 const router = express.Router();
 
@@ -35,6 +36,7 @@ router.use("/upload", uploadApi);
 router.use("/cart", cartApi);
 router.use("/products", productApi);
 router.use("/categories", categoryApi);
+router.use("/order", orderApi);
 
 module.exports = router;
 
